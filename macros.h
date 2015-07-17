@@ -1,6 +1,7 @@
 #ifndef MACROS_H_
 #define MACROS_H_
 
+#include <stdint.h>
 
 // Generic port, ddr and pin:
 #define PORT_(port) PORT ## port
@@ -22,5 +23,6 @@
 #define SET_OUTPUT(D, P) SET_HIGH(D, P)
 #define SET_INPUT(D, P)  SET_LOW(D, P)
 
+typedef volatile uint8_t* reg_t;
 
 #endif
