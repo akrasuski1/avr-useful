@@ -6,12 +6,7 @@
 // This library assumes only four data pins are connected, and RW pin is grounded.
 
 #include "HD44780.h"
-
-#define PORT_(port) PORT ## port
-#define DDR_(port)  DDR  ## port
-
-#define PORT(port) PORT_(port)
-#define DDR(port)  DDR_(port)
+#include "macros.h"
 
 #define LCD_RS_DIR		DDR(LCD_RS_DDR)
 #define LCD_RS_PORT 	PORT(LCD_RS_DDR)
