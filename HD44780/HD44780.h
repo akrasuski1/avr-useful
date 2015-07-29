@@ -15,22 +15,22 @@
 
 // if you need to have custom ports, define it like: B for PORTB
 #define LCD_RS_DDR      LCD_DDR
-#define LCD_RS			(1 << 2)
+#define LCD_RS			(1 << 6)
 
 #define LCD_E_DDR       LCD_DDR
-#define LCD_E			(1 << 3)
+#define LCD_E			(1 << 7)
 
 #define LCD_DB4_DDR     LCD_DDR
-#define LCD_DB4			(1 << 4)
+#define LCD_DB4			(1 << 2)
 
 #define LCD_DB5_DDR     LCD_DDR
-#define LCD_DB5			(1 << 5)
+#define LCD_DB5			(1 << 3)
 
 #define LCD_DB6_DDR     LCD_DDR
-#define LCD_DB6			(1 << 6)
+#define LCD_DB6			(1 << 4)
 
 #define LCD_DB7_DDR     LCD_DDR
-#define LCD_DB7			(1 << 7)
+#define LCD_DB7			(1 << 5)
 
 
 
