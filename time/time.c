@@ -16,13 +16,11 @@ ISR(TIMER2_OVF_vect){
 }
 
 // This assumes round clock (full Mhz, e.g. 16Mhz).
-// If your clock is not round, use f.p. calculations, commented
-// below.
+// If your clock is not round, use f.p. calculations.
 uint64_t time_us(){
-	//return (_time_overflow_cnt*256 + TCNT2)/(F_CPU/1000000.0);
 	return (_time_overflow_cnt*256 + TCNT2)/(F_CPU/1000000);
 }
 
 uint64_t time_ms(){
-	return time_us()/1000;
+	return (_time_overflow_cnt*256 + TCNT2)/(F_CPU/1000);
 }
